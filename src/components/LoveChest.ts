@@ -78,8 +78,8 @@ export class LoveChest {
 			text: 'Happy Birthdayy Payal !! ',
 			style: {
 				fontFamily: 'Arcade',
-				fontSize: '32px',
-				color: '#fe0000',
+				fontSize: '34px',
+				color: ' #ffcf33 ',
 				stroke: '#000000',
 				strokeThickness: 4
 			},
