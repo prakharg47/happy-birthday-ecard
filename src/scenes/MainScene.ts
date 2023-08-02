@@ -42,13 +42,13 @@ export class MainScene extends LevelScene {
 	private addColliders() {
 		this.physics.add.collider(this.map.platforms, this.player.sprite);
 		this.physics.add.collider(this.map.platformObjects, this.player.sprite);
-		this.physics.add.collider(this.map.doors.sprites, this.player.sprite);
+		// this.physics.add.collider(this.map.doors.sprites, this.player.sprite);
 
-		this.physics.add.collider(
-			this.map.doors.questionAreas,
-			this.player.sprite,
-			this.handlePlayerCollidesQuestion
-		);
+		// this.physics.add.collider(
+		// 	this.map.doors.questionAreas,
+		// 	this.player.sprite,
+		// 	this.handlePlayerCollidesQuestion
+		// );
 
 		this.physics.add.collider(
 			this.map.doors.loveChest.sprite,
