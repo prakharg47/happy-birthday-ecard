@@ -46,7 +46,7 @@
 
 		<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
 
-		<title>Happy Birthday Orly</title>
+		<title>Have a fun day!</title>
 	</head>
 	<body>
 		<style>
@@ -290,7 +290,7 @@
 			style="display:none"
 		></iframe> -->
 		<audio id="player">
-			<source id="player-src" src="assets/audio/martin.ogg" type="audio/ogg"/>
+			<source id="player-src" src="assets/audio/silence.ogg" type="audio/ogg"/>
 			Your browser does not support the audio element.
 		</audio>
 		<ul id="playlist">
@@ -300,9 +300,15 @@
 
 		<% if(htmlWebpackPlugin.options.options.env === 'production'){ %>
 		<script>
-			window.onload=function(){
-    			document.getElementById("player").play();
-  			}
+			// window.onload=function(){
+    		// 	document.getElementById("player").play();
+  			// }
+
+  			const rollSound = new Audio("assets/audio/breezin.ogg");
+    		document.getElementById('phaser-game').addEventListener("click", e => 
+    		rollSound.play());
+    		document.getElementById('phaser-game').addEventListener("load", e => 
+    		rollSound.play());
 
 			// Check that service workers are registered
 			if ('serviceWorker' in navigator) {
