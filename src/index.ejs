@@ -49,6 +49,8 @@
 		<title>Have a fun day!</title>
 	</head>
 	<body>
+		<button id="hello">audio</button>
+
 		<style>
 			@font-face {
 				font-family: 'Arcade';
@@ -305,10 +307,10 @@
   			// }
 
   			const rollSound = new Audio("assets/audio/breezin.ogg");
-    		document.getElementById('phaser-game').addEventListener("click", e => 
+    		document.getElementById('hello').addEventListener("click", e => 
     		rollSound.play());
-    		document.getElementById('phaser-game').addEventListener("load", e => 
-    		rollSound.play());
+    		// document.getElementById('phaser-game').addEventListener("load", e => 
+    		// rollSound.play());
 
 			// Check that service workers are registered
 			if ('serviceWorker' in navigator) {
