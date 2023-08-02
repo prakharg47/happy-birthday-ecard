@@ -79,7 +79,7 @@ export class LoveChest {
 			style: {
 				fontFamily: 'Arcade',
 				fontSize: '34px',
-				color: ' #ffcf33 ',
+				color: '#ffcf33',
 				stroke: '#000000',
 				strokeThickness: 4
 			},
