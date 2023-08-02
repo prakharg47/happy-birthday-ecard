@@ -297,18 +297,22 @@
 		</audio>
 		<ul id="playlist">
 			<!-- <li data-src="assets/audio/breezin.ogg"></li> -->
-			<li data-src="assets/audio/martin.ogg"></li>
+			<!-- <li data-src="assets/audio/martin.ogg"></li> -->
 		</ul>
 
 		<% if(htmlWebpackPlugin.options.options.env === 'production'){ %>
 		<script>
 			// window.onload=function(){
-    		// 	document.getElementById("player").play();
+    		// 	const rollSound = new Audio("assets/audio/martin.ogg");
+    		// document.getElementById('hello').addEventListener("click", e => 
+    		// rollSound.play());
   			// }
 
   			const rollSound = new Audio("assets/audio/martin.ogg");
     		document.getElementById('hello').addEventListener("click", e => 
     		rollSound.play());
+
+
     		// document.getElementById('phaser-game').addEventListener("load", e => 
     		// rollSound.play());
 
